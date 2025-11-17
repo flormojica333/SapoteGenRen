@@ -1,0 +1,313 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/png" href="logo.png">
+    <title>Sapote General Renovation LLC | Indiana's Trusted Contractor</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+
+    <script src="index.js" defer></script>
+
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        'sapote-dark': '#1e3a3a', // Dark Teal/Slate
+                        'sapote-accent': '#84cc16', // Bright Lime Green
+                        'sapote-light': '#f0fdf4', // Lightest Green/Off-White
+                    },
+                    fontFamily: {
+                        sans: ['Inter', 'sans-serif'],
+                    },
+                },
+            },
+        }
+    </script>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap');
+    </style>
+</head>
+
+<body class="font-sans text-gray-800 bg-sapote-light antialiased">
+
+<header class="sticky top-0 z-50 bg-white shadow-lg">
+    <nav class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="flex items-center justify-between h-20">
+
+            <div class="flex items-center">
+                <img src="logo.png" alt="Sapote General Renovation Logo" class="h-16 w-auto mr-3">
+                <span class="text-xl sm:text-2xl font-extrabold text-sapote-dark tracking-tight">
+                        SAPOTE GENERAL RENOVATION
+                    </span>
+            </div>
+
+            <div class="hidden md:flex space-x-8">
+                <a href="#home" class="text-lg font-medium text-gray-600 hover:text-sapote-accent transition duration-150">Home</a>
+                <a href="#services" class="text-lg font-medium text-gray-600 hover:text-sapote-accent transition duration-150">Services</a>
+                <a href="#about" class="text-lg font-medium text-gray-600 hover:text-sapote-accent transition duration-150">About Us</a>
+                <a href="#contact" class="px-5 py-2.5 text-lg font-semibold text-white bg-sapote-accent rounded-lg shadow-lg hover:bg-green-600 transition duration-300">
+                    Free Quote
+                </a>
+            </div>
+
+            <div class="md:hidden">
+                <button id="mobile-menu-button" class="text-gray-600 hover:text-sapote-accent focus:outline-none">
+                    <svg class="w-7 h-7" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16m-7 6h7"></path></svg>
+                </button>
+            </div>
+        </div>
+    </nav>
+
+    <div id="mobile-menu" class="hidden md:hidden bg-white shadow-xl">
+        <a href="#home" class="block px-4 py-3 text-base font-medium text-gray-700 hover:bg-gray-50 border-t">Home</a>
+        <a href="#services" class="block px-4 py-3 text-base font-medium text-gray-700 hover:bg-gray-50">Services</a>
+        <a href="#about" class="block px-4 py-3 text-base font-medium text-gray-700 hover:bg-gray-50">About Us</a>
+        <a href="#contact" class="block px-4 py-3 text-base font-medium text-white bg-sapote-accent hover:bg-green-600">Free Quote</a>
+    </div>
+</header>
+
+<main>
+
+    <section id="home" class="relative bg-sapote-dark pt-24 pb-20 md:pt-32 md:pb-28 overflow-hidden rounded-b-[30px] shadow-2xl">
+        <div class="absolute inset-0 opacity-10 bg-repeat" style="background-image: url('data:image/svg+xml;utf8,<svg xmlns=\'http://www.w3.org/2000/svg\' viewBox=\'0 0 100 100\' opacity=\'0.2\'><rect x=\'0\' y=\'0\' width=\'100\' height=\'100\' fill=\'none\' stroke=\'#84cc16\' stroke-width=\'1\'/></svg>')"></div>
+
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10 text-center">
+            <img src="logo.png" alt="Sapote General Renovation Logo" class="h-32 w-auto mx-auto mb-6">
+
+            <h1 class="text-4xl sm:text-6xl font-extrabold text-white leading-tight mb-4">
+                TRANSFORM YOUR VISION INTO REALITY.
+            </h1>
+            <p class="text-xl sm:text-2xl text-sapote-accent font-light mb-10 max-w-3xl mx-auto">
+                Comprehensive General Renovation Services Serving the **Entire State of Indiana.**
+            </p>
+
+            <div class="flex flex-col sm:flex-row justify-center space-y-4 sm:space-y-0 sm:space-x-6">
+                <a href="#contact" class="inline-block px-10 py-4 text-lg font-bold text-sapote-dark bg-white rounded-xl shadow-2xl transition duration-300 transform hover:scale-105 hover:bg-gray-100">
+                    GET YOUR FREE QUOTE TODAY!
+                </a>
+                <a href="tel:3172229389" class="inline-block px-10 py-4 text-lg font-bold text-white border-2 border-sapote-accent rounded-xl shadow-2xl transition duration-300 transform hover:bg-sapote-accent hover:text-sapote-dark">
+                    CALL US NOW: (317) 222-9389
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-10">
+        <p class="text-lg text-gray-700 text-center max-w-4xl mx-auto">
+            Welcome to the interactive overview of Sapote General Renovation LLC. This application is designed to quickly highlight our core values, comprehensive service catalog, and commitment to Indiana homeowners. Use the navigation bar above or scroll down to explore our offerings, understand our commitment to quality, and easily request your free, no-obligation quote. Our goal is to make starting your renovation project as transparent and simple as possible.
+        </p>
+    </div>
+
+
+    <section class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-16 -mt-16 relative z-20">
+        <div class="grid md:grid-cols-3 gap-8">
+            <div class="bg-white p-6 rounded-xl shadow-2xl hover:shadow-sapote-accent/30 transition duration-300 border-t-4 border-sapote-accent">
+                <div class="flex items-center text-sapote-accent mb-3">
+                    <svg class="w-8 h-8 mr-3" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.828 0l-4.243-4.243a8 8 0 1111.314 0z"></path><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 11a3 3 0 11-6 0 3 3 0 016 0z"></path></svg>
+                    <h3 class="text-xl font-semibold text-sapote-dark">All-State Coverage</h3>
+                </div>
+                <p class="text-gray-600">Based in Indiana, but serving **every corner** of the state. We bring quality renovations right to your doorstep, no matter your location.</p>
+            </div>
+            <div class="bg-white p-6 rounded-xl shadow-2xl hover:shadow-sapote-accent/30 transition duration-300 border-t-4 border-sapote-accent">
+                <div class="flex items-center text-sapote-accent mb-3">
+                    <svg class="w-8 h-8 mr-3" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 11H5m14 0a2 2 0 012 2v6a2 2 0 01-2 2H5a2 2 0 01-2-2v-6a2 2 0 012-2m14 0V9a2 2 0 00-2-2M5 11V9a2 2 0 012-2m0 0V5a2 2 0 012-2h6a2 2 0 012 2v2M7 7h10"></path></svg>
+                    <h3 class="text-xl font-semibold text-sapote-dark">Comprehensive Services</h3>
+                </div>
+                <p class="text-gray-600">We handle **all kinds of services**—from kitchen and bath remodels to roofing, siding, and full home additions. One call, one contractor.</p>
+            </div>
+            <div class="bg-white p-6 rounded-xl shadow-2xl hover:shadow-sapote-accent/30 transition duration-300 border-t-4 border-sapote-accent">
+                <div class="flex items-center text-sapote-accent mb-3">
+                    <svg class="w-8 h-8 mr-3" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m5.618-4.228A1.99 1.99 0 0015.604 5h-7.228a1.99 1.99 0 00-1.994 2.158l.794 4.097c.48 2.476 2.404 4.399 4.88 4.88l4.096.794c1.192.232 2.373-.25 3.096-1.127l1.042-1.272a2.002 2.002 0 00.308-2.07l-.92-1.995c-.32-.693-.974-1.298-1.748-1.782z"></path></svg>
+                    <h3 class="text-xl font-semibold text-sapote-dark">Zero-Risk Start</h3>
+                </div>
+                <p class="text-gray-600">We believe in transparency. That's why we offer **100% Free, No-Obligation Quotes** for all potential projects.</p>
+            </div>
+        </div>
+    </section>
+
+    <section id="services" class="py-20 bg-sapote-dark/5">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <h2 class="text-4xl font-extrabold text-sapote-dark text-center mb-4">
+                Our Comprehensive Renovation & Repair Offerings
+            </h2>
+            <p class="text-xl text-gray-600 text-center mb-12 max-w-3xl mx-auto">
+                This section details our full capabilities, providing homeowners a clear list of projects we manage. We handle all needs from simple maintenance to complex additions, serving as your single point of contact.
+            </p>
+
+            <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+                <div class="bg-white p-6 rounded-xl shadow-lg border-b-4 border-sapote-accent">
+                    <h4 class="text-2xl font-bold text-sapote-dark mb-2">Kitchen & Bath Remodeling</h4>
+                    <p class="text-gray-600">Full design and build, custom cabinetry, countertops, plumbing, new fixtures, and intricate tile work. We create functional, beautiful spaces.</p>
+                </div>
+                <div class="bg-white p-6 rounded-xl shadow-lg border-b-4 border-sapote-accent">
+                    <h4 class="text-2xl font-bold text-sapote-dark mb-2">Home Additions & Major Remodels</h4>
+                    <p class="text-gray-600">Creating new, spacious rooms, second-story additions, and full house restructuring. We manage complex projects with professionalism.</p>
+                </div>
+                <div class="bg-white p-6 rounded-xl shadow-lg border-b-4 border-sapote-accent">
+                    <h4 class="text-2xl font-bold text-sapote-dark mb-2">Interior Renovations</h4>
+                    <p class="text-gray-600">Drywall installation, professional painting, flooring installation (hardwood, laminate, tile), and detailed trim/molding work.</p>
+                </div>
+                <div class="bg-white p-6 rounded-xl shadow-lg border-b-4 border-sapote-accent">
+                    <h4 class="text-2xl font-bold text-sapote-dark mb-2">Exterior Services</h4>
+                    <p class="text-gray-600">Complete roofing repair and replacement, modern siding installation, window and door replacements for better efficiency and curb appeal.</p>
+                </div>
+                <div class="bg-white p-6 rounded-xl shadow-lg border-b-4 border-sapote-accent">
+                    <h4 class="text-2xl font-bold text-sapote-dark mb-2">Outdoor Living Spaces</h4>
+                    <p class="text-gray-600">Custom deck building and repair, patio design, pergolas, and outdoor kitchens to enhance your home's exterior appeal.</p>
+                </div>
+                <div class="bg-white p-6 rounded-xl shadow-lg border-b-4 border-sapote-accent">
+                    <h4 class="text-2xl font-bold text-sapote-dark mb-2">General Repairs & Maintenance</h4>
+                    <p class="text-gray-600">Essential handyman services and all general home repairs. No job is too small when it comes to maintaining your property.</p>
+                </div>
+            </div>
+
+            <div id="gallery" class="pt-20">
+                <h2 class="text-4xl font-extrabold text-sapote-dark text-center mb-4">
+                    Our Work
+                </h2>
+                <p class="text-xl text-gray-600 text-center mb-12 max-w-3xl mx-auto">
+                    A picture is worth a thousand words. Browse our gallery to see the quality and craftsmanship we bring to every project.
+                </p>
+
+                <div class="max-w-4xl mx-auto">
+                    <div class="relative bg-black rounded-xl shadow-2xl">
+                        <img id="slideshow-image" src="https://placehold.co/800x600/1e3a3a/f0fdf4?text=Kitchen+Remodel" alt="Renovation project featured image" class="w-full h-auto object-cover rounded-xl" style="aspect-ratio: 4/3;">
+
+                        <button id="prev-slide" class="absolute top-1/2 left-2 sm:left-4 -translate-y-1/2 bg-white/50 hover:bg-white text-sapote-dark p-3 rounded-full shadow-lg transition duration-150">
+                            <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 19l-7-7 7-7"></path></svg>
+                        </button>
+                        <button id="next-slide" class="absolute top-1/2 right-2 sm:right-4 -translate-y-1/2 bg-white/50 hover:bg-white text-sapote-dark p-3 rounded-full shadow-lg transition duration-150">
+                            <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"></path></svg>
+                        </button>
+                    </div>
+
+                    <div id="thumbnail-container" class="flex space-x-2 p-2 overflow-x-auto mt-4">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="about" class="py-20">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="lg:flex lg:items-center lg:space-x-12">
+
+                <div class="lg:w-1/2">
+                    <h2 class="text-4xl font-extrabold text-sapote-dark mb-4">
+                        The Sapote Difference: Quality, Integrity, and State-Wide Service
+                    </h2>
+                    <p class="text-xl text-gray-600 mb-8">
+                        This section is dedicated to our founding principles. Founded in Indiana, Sapote General Renovation LLC was established with a simple mission: to provide the highest standard of renovation service with a focus on client satisfaction and local expertise. We take pride in being a reliable contractor that serves the entire state, ensuring every Hoosier homeowner has access to quality craftsmanship.
+                    </p>
+
+                    <div class="space-y-4">
+                        <div class="flex items-start">
+                            <span class="text-sapote-accent font-bold text-xl mr-2">&bull;</span>
+                            <p class="text-gray-700"><strong class="text-sapote-dark">Integrity:</strong> Honest, transparent communication and pricing from start to finish.</p>
+                        </div>
+                        <div class="flex items-start">
+                            <span class="text-sapote-accent font-bold text-xl mr-2">&bull;</span>
+                            <p class="text-gray-700"><strong class="text-sapote-dark">Quality:</strong> Utilizing durable materials and proven construction techniques.</p>
+                        </div>
+                        <div class="flex items-start">
+                            <span class="text-sapote-accent font-bold text-xl mr-2">&bull;</span>
+                            <p class="text-gray-700"><strong class="text-sapote-dark">Accessibility:</strong> Serving clients in every county across Indiana.</p>
+                        </div>
+                        <div class="flex items-start">
+                            <span class="text-sapote-accent font-bold text-xl mr-2">&bull;</span>
+                            <p class="text-gray-700"><strong class="text-sapote-dark">Dedication:</strong> Treating your home with the respect and care it deserves.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="lg:w-1/2 mt-10 lg:mt-0 relative">
+                    <img src="https://placehold.co/800x500/1e3a3a/84cc16?text=Building+Your+Vision"
+                         alt="Professional construction team working on a project"
+                         class="rounded-xl shadow-2xl w-full h-auto object-cover transform rotate-1 transition duration-500"
+                    >
+                    <div class="absolute inset-0 bg-sapote-accent/10 rounded-xl"></div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 6. Contact Section -->
+    <section id="contact" class="py-20 bg-white shadow-inner">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <h2 class="text-4xl font-extrabold text-sapote-dark text-center mb-4">
+                Contact Us for a Free Quote
+            </h2>
+            <p class="text-xl text-gray-600 text-center mb-10 max-w-3xl mx-auto">
+                We serve the entire state of Indiana. Call or email us directly to discuss your project and get a free, no-obligation quote.
+            </p>
+
+            <!-- Centered Direct Contact Information -->
+            <div class="max-w-md mx-auto">
+                <div class="space-y-8 p-6 bg-sapote-dark rounded-xl text-white shadow-xl">
+                    <h3 class="text-2xl font-bold border-b pb-3 border-sapote-accent text-center">Direct Contact</h3>
+
+                    <!-- Phone -->
+                    <div class="flex flex-col items-center space-y-2">
+                        <svg class="w-8 h-8 text-sapote-accent" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-11a2 2 0 01-2-2z"></path></svg>
+                        <div>
+                            <p class="text-sm text-gray-300 text-center">Call Us</p>
+                            <a href="tel:3172229389" class="text-xl font-bold block text-center hover:text-sapote-accent transition duration-150">(317) 222-9389</a>
+                        </div>
+                    </div>
+
+                    <!-- Email -->
+                    <div class="flex flex-col items-center space-y-2">
+                        <svg class="w-8 h-8 text-sapote-accent" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 8l7.84 5.23a2 2 0 002.32 0L21 8m-1 11H4a2 2 0 01-2-2V7a2 2 0 012-2h16a2 2 0 012 2v10a2 2 0 01-2 2z"></path></svg>
+                        <div>
+                            <p class="text-sm text-gray-300 text-center">Email Us</p>
+                            <a href="mailto:srenovationg@gmail.com" class="text-xl font-bold block text-center hover:text-sapote-accent transition duration-150">srenovationg@gmail.com</a>
+                        </div>
+                    </div>
+
+                    <!-- Service Area -->
+                    <div class="flex flex-col items-center space-y-2">
+                        <svg class="w-8 h-8 text-sapote-accent" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.828 0l-4.243-4.243a8 8 0 1111.314 0z"></path><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 11a3 3 0 11-6 0 3 3 0 016 0z"></path></svg>
+                        <div>
+                            <p class="text-sm text-gray-300 text-center">Service Area</p>
+                            <p class="text-xl font-bold block text-center">Entire State of Indiana</p>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </section>
+
+</main>
+
+<section class="bg-sapote-dark py-12 text-center">
+    <h2 class="text-3xl font-bold text-white mb-6">Ready to Start Your Renovation Journey?</h2>
+    <a href="#contact" class="inline-block px-10 py-4 text-lg font-bold text-sapote-dark bg-sapote-accent rounded-xl shadow-2xl transition duration-300 transform hover:scale-105 hover:bg-green-600">
+        CONTACT US TODAY
+    </a>
+</section>
+
+<footer class="bg-sapote-dark/95 text-white py-10">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+        <div class="mb-4">
+            <p class="text-sm">&copy; 2025 Sapote General Renovation LLC. All Rights Reserved.</p>
+            <p class="text-sm mt-1">Serving the entire state of Indiana with quality general contracting services.</p>
+        </div>
+        <div class="flex justify-center space-x-4 text-sm">
+            <a href="#home" class="hover:text-sapote-accent transition duration-150">Home</a>
+            <a href="#services" class="hover:text-sapote-accent transition duration-150">Services</a>
+            <a href="#about" class="hover:text-sapote-accent transition duration-150">About</a>
+            <a href="#contact"  class="hover:text-sapote-accent transition duration-150">Contact Us</a>
+        </div>
+    </div>
+</footer>
+
+<button id="back-to-top" class="fixed bottom-6 right-6 bg-sapote-accent text-white px-4 py-2 rounded-lg shadow-lg transition-opacity duration-300 opacity-0 invisible hover:bg-green-600 focus:outline-none focus:ring-2 focus:ring-sapote-accent focus:ring-opacity-75 flex items-center space-x-2 font-semibold">
+    <svg class="w-5 h-5" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 10l7-7m0 0l7 7m-7-7v18"></path></svg>
+    <span>Top</span>
+</button>
+
+</body>
+</html>
